@@ -13,7 +13,7 @@ Digest::SHA~6.02
 Exporter::Lite~0.09
 File::Path~2.18
 File::Temp~0.2311
-Filter::Util::Call~1.60
+Filter::Util::Call~1.61
 IO::FDPass~1.3
 IO::Handle~1.48
 MIME::Base64~3.16
@@ -30,9 +30,9 @@ Proc::FastSpawn~1.2
 Scalar::Util~1.62
 Socket~2.033
 Term::ANSIColor~5.01
-Test::Builder~1.302190
 Test::Class~0.52
 Test::Differences~0.69
+Test::More~1.302190
 Text::Diff~1.45
 Time::HiRes~1.9764
 Time::Local~1.30

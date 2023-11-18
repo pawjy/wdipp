@@ -5,7 +5,7 @@ wdipp
 
 As a locally running server (for devs):
 
-  $ git clone https://github.com/wakaba/wdipp
+  $ git clone https://github.com/pawjy/wdipp
   $ cd wdipp
   $ ./lserver
 
@@ -169,11 +169,14 @@ following name/value paris:
 
 Wakaba <wakaba@suikawiki.org>.
 
-* Acknowledgements
+* History
 
 Inspired by <https://github.com/nobuoka/wd-image-processor>, authored
 by OND Inc. and nobuoka.
 
+The Git repository was at <https://github.com/wakaba/wdipp> until 18
+November 2023.
+
 * License
 
-See |LICENSE|.
+See |./LICENSE|.

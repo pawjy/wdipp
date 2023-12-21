@@ -161,8 +161,17 @@ sub run_processor ($$) {
         my $session;
         my $done;
         (undef, $session, $done, $abort, undef, $wdskey) = @{$_[0]};
-        
-        return $js_file->read_char_string->then (sub {
+
+        return Promise->resolve->then (sub {
+          return unless defined $def->{page_url};
+          my $u = Web::URL->parse_string ($def->{page_url});
+          return error_response $app, $sdata->{config}, 'Bad process',
+              "$wdskey: Bad |page_url|: " . $def->{page_url}
+              unless defined $u and $u->is_http_s;
+          return $session->go ($u);
+        })->then (sub {
+          return $js_file->read_char_string;
+        })->then (sub {
           return $session->execute (q{
             return Promise.resolve ().then (() => new Function (arguments[0]).apply (null, arguments[1])).then (value => {
               if (value && value.content && value.content.targetElement) {
@@ -365,7 +374,7 @@ return sub {
 
 =head1 LICENSE
 
-Copyright 2020 Wakaba <wakaba@suikawiki.org>.
+Copyright 2020-2023 Wakaba <wakaba@suikawiki.org>.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as

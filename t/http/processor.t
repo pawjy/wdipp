@@ -404,11 +404,33 @@ Test {
   });
 } n => 1, name => 'health check during worker is active';
 
+Test {
+  my $current = shift;
+  return $current->client->request (path => ['ext1'])->then (sub {
+    my $res = $_[0];
+    test {
+      is $res->status, 200;
+      is $res->body_bytes, "https://www.example.com/";
+    } $current->c;
+  });
+} n => 2, name => 'external page';
+
+Test {
+  my $current = shift;
+  return $current->client->request (path => ['extbad'])->then (sub {
+    my $res = $_[0];
+    test {
+      is $res->status, 500;
+      is $res->body_bytes, "500 Bad process";
+    } $current->c;
+  });
+} n => 2, name => 'external page_url broken';
+
 RUN;
 
 =head1 LICENSE
 
-Copyright 2016-2020 Wakaba <wakaba@suikawiki.org>.
+Copyright 2016-2023 Wakaba <wakaba@suikawiki.org>.
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU Affero General Public License as

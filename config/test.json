@@ -29,6 +29,8 @@
     "defaultstatus": {},
     "timeout2": {"timeout": 2},
     "sleep": {"timeout": 180},
+    "ext1": {"page_url": "https://www.example.com/"},
+    "extbad": {"page_url": "javascript:123"},
 
     "dummy": {}
   },

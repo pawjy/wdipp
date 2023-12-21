@@ -156,6 +156,11 @@ following name/value paris:
 
     XXX
 
+    page_url : Absolute URL whose scheme is |http:| or |https:|, or null
+
+      The page initially opened before the execution of the processor
+      script.  Defaulted to <about:blank>.
+
   processors_dir : Path to the directory
 
     XXX

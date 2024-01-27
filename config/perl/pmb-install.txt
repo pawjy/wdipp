@@ -38,5 +38,5 @@ Text::Diff~1.45
 Time::HiRes~1.9764
 Time::Local~1.35
 Try::Tiny~0.31
-URI~5.23
+URI~5.24
 common::sense~3.75

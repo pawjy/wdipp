@@ -31,12 +31,12 @@ Proc::FastSpawn~1.2
 Scalar::Util~1.63
 Socket~2.037
 Term::ANSIColor~5.01
-Test::Builder~1.302198
 Test::Class~0.52
 Test::Differences~0.71
+Test::More~1.302198
 Text::Diff~1.45
 Time::HiRes~1.9764
 Time::Local~1.35
 Try::Tiny~0.31
-URI~5.25
+URI~5.26
 common::sense~3.75

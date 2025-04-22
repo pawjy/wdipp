@@ -23,7 +23,7 @@ MIME::Base64~3.16
 MRO::Compat~0.15
 Math::BigInt~2.005003
 Method::WeakCallback~0.04
-Module::Runtime~0.017
+Module::Runtime~0.018
 Net::SSLeay~1.94
 Object::Event~1.23
 Path::Class~0.37
@@ -32,9 +32,9 @@ Proc::FastSpawn~1.2
 Scalar::Util~1.69
 Socket~2.038
 Term::ANSIColor~5.01
-Test::Builder~1.302210
 Test::Class~0.52
 Test::Differences~0.71
+Test::More~1.302210
 Text::Diff~1.45
 Time::HiRes~1.9764
 Time::Local~1.35

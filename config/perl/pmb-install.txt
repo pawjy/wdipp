@@ -13,8 +13,8 @@ Data::Dumper~2.183
 Digest::SHA~6.04
 Exporter::Lite~0.09
 File::Path~2.18
-File::Temp~0.2311
-Filter::Util::Call~1.64
+File::Temp~0.2312
+Filter::Util::Call~1.65
 IO::AIO~4.81
 IO::FDPass~1.3
 IO::Handle~1.55
@@ -39,5 +39,5 @@ Text::Diff~1.45
 Time::HiRes~1.9764
 Time::Local~1.35
 Try::Tiny~0.32
-URI~5.32
+URI~5.34
 common::sense~3.75

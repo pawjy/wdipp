@@ -101,7 +101,7 @@
                "run" : "make deps"
             },
             {
-               "run" : "docker build -t quay\u005C.io\u005C/wakaba\u005C/wdipp \u005C."
+               "run" : "docker build --cache-from quay\u005C.io\u005C/wakaba\u005C/wdipp -t quay\u005C.io\u005C/wakaba\u005C/wdipp \u005C."
             },
             {
                "run" : "TEST_APP_DOCKER_IMAGE=quay.io/wakaba/wdipp make test || TEST_APP_DOCKER_IMAGE=quay.io/wakaba/wdipp make test"

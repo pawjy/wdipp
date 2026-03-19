@@ -5,6 +5,7 @@ AnyEvent::FileLock~0.06
 AnyEvent::Fork~1.32
 AnyEvent::HTTP~2.25
 AnyEvent::HTTPD~0.93
+AnyEvent::Util
 Canary::Stability~2013
 Capture::Tiny~0.50
 Carp~1.50
@@ -24,7 +25,7 @@ MRO::Compat~0.15
 Math::BigInt~2.005003
 Method::WeakCallback~0.04
 Module::Runtime~0.018
-Net::SSLeay~1.94
+Net::SSLeay
 Object::Event~1.23
 Path::Class~0.37
 Path::Tiny~0.150
